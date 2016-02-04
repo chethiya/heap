@@ -1,6 +1,6 @@
 # A Simple Min Heap
 
-This is a simple mean heap implementation.
+This is a simple min heap implementation.
 
 ## API
 
@@ -9,7 +9,7 @@ Instantiate a heap using the compare function. If compare function is not
 given it falls back to a simple number comparison.
 
 Required compare function should be similar to the same compare function
-given the to the Array.sort()
+given the to the [Array.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
 ### Heap.push(value)
 
@@ -18,7 +18,7 @@ Pushes the value to the heap
 ### Heap.top()
 
 Returns the value on top of the heap. This is the min value. If max value is
-required the compare function to be altered accordingly.
+required the compare function need to be altered accordingly.
 
 ### Heap.pop()
 
@@ -27,11 +27,12 @@ Removes the top element from the heap and returns the top value.
 ## Example
 
 Following example finds the Kth smallest number of a number list in
-O(NlogK) time which is much more efficient when K << N.
+O(NlogK) time. This is efficient compared to sorting entire
+list which takes O(NlogN) time, given that K << N.
 
 ```
 
- var Heap = require('../heap');
+ var Heap = require('minheap');
  // Max heap
  var heap = new Heap(function(a,b) {
   return b - a;
