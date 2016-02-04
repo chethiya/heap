@@ -2,6 +2,14 @@
 
 This is a simple min heap implementation.
 
+## Install
+
+Using npm
+
+```
+npm install minheap
+```
+
 ## API
 
 ## Heap(compare)
