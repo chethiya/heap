@@ -8,8 +8,7 @@ This is a simple min heap implementation.
 Instantiate a heap using the compare function. If compare function is not
 given it falls back to a simple number comparison.
 
-Required compare function should be similar to the same compare function
-given the to the [Array.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
+Required compare function should be similar to the function passed into [Array.sort()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort)
 
 ### Heap.push(value)
 

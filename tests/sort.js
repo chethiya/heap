@@ -1,4 +1,4 @@
-var Heap = require('../heap');
+var Heap = require('minheap');
 // Max heap
 var heap = new Heap(function(a,b) {
  return b - a;
