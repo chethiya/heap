@@ -5,7 +5,7 @@ var heap = new Heap(function(a,b) {
 });
 var N = 1<<20;
 var MAX_VAL = 1<<29;
-var K = 10
+var K = (1<<16)-1;
 var arr = [];
 
 // Generate random list

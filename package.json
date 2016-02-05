@@ -1,6 +1,6 @@
 {
   "name": "minheap",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple implementation of min-heap",
   "main": "build/heap.js",
   "directories": {},

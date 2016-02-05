@@ -29,7 +29,7 @@ required the compare function need to be altered accordingly.
 
 ### Heap.pop()
 
-Removes the top element from the heap and returns the top value.
+Removes the top element from the heap and returns that value.
 
 ## Example
 
@@ -37,7 +37,7 @@ Following example finds the Kth smallest number of a number list in
 O(NlogK) time. This is efficient compared to sorting entire
 list which takes O(NlogN) time, given that K << N.
 
-```
+```javascript
 
  var Heap = require('minheap');
  // Max heap
@@ -60,7 +60,7 @@ list which takes O(NlogN) time, given that K << N.
    heap.push(arr[i]);
   } else {
    if (arr[i] < heap.top()) {
-    r = heap.pop();
+    heap.pop();
     heap.push(arr[i]);
    }
   }
