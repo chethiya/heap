@@ -83,7 +83,7 @@ class Heap
     break
   return
 
-if GLOBAL? and not window?
+if global? and not window?
  module.exports = Heap
 else
  window.Heap = Heap
